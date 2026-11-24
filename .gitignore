@@ -35,3 +35,6 @@ fastlane/README.md
 *.cer
 .env
 .env.*
+
+# Personal notes (never commit)
+notes.md
