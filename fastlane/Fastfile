@@ -23,6 +23,7 @@ platform :ios do
       scheme: "TestCI",
       device: "iPhone 17 (27.2)",
       only_testing: ["TestCITests"],
+      cloned_source_packages_path: ".spm",
       clean: true
     )
   end

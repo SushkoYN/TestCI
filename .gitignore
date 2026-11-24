@@ -16,6 +16,7 @@ xcuserdata/
 # Swift Package Manager
 .build/
 .swiftpm/
+.spm/
 
 # Bundler / Ruby
 vendor/bundle/
