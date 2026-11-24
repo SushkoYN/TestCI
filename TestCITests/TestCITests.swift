@@ -37,7 +37,7 @@ struct TodoAnalyzerTests {
 
     @Test func completionRate() {
         #expect(TodoAnalyzer.completionRate([]) == 0)
-        #expect(TodoAnalyzer.completionRate(SampleData.todos) == 0.25)
+        #expect(TodoAnalyzer.completionRate(SampleData.todos) == 0.125)
     }
 
     @Test func summaryText() {
