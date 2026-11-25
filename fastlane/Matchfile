@@ -1,0 +1,5 @@
+git_url("https://github.com/SushkoYN/TestCI-certificates.git")
+storage_mode("git")
+type("appstore")
+app_identifier(["YS.TestCI"])
+team_id("69QY2U37R8")
