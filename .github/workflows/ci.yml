@@ -38,10 +38,5 @@ jobs:
           path: .spm
           key: spm-${{ runner.os }}-${{ hashFiles('TestCI.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
           restore-keys: spm-${{ runner.os }}-
-      - name: Boot simulator
-        run: |
-          UDID=$(xcrun simctl list devices "iOS 27.2" available | grep "iPhone 17 (" | head -1 | grep -oE '[0-9A-F]{8}-([0-9A-F]{4}-){3}[0-9A-F]{12}')
-          echo "Simulator: $UDID"
-          xcrun simctl bootstatus "$UDID" -b
       - name: Run tests
         run: bundle exec fastlane test
